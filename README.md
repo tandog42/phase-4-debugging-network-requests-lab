@@ -63,11 +63,14 @@ developing your own process.
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+  seen there wasd a 500 code, i then looked in my rails console and seen i was getting a NameError from my ToysController::Toys. I then went to my create action and seen that it was Toys instead of Toy
 
 - Update the number of likes for a toy
 
   - How I debugged:
+i got a unexpected end of json input. I then went into my Toy controller and noticed the  update action was not rendering to responce in json
 
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+  I dont remember status code but when i looked in my rails console i got an error saying no route found so i went into config/routes and noticed there wasnt a destory route
